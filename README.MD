@@ -38,3 +38,25 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 ### MongoDB
  Install MongoDb [Guide](https://docs.mongodb.com/manual/administration/install-community/)
+
+
+
+ ### Registration
+API_HOST/user
+{
+  name:string,
+  surname:string,
+  email:string,
+  password:string,
+  confirm:string
+}
+
+
+### Sign In
+
+API_HOST/user/sign-in
+
+{
+  email:string,
+  password:string
+}

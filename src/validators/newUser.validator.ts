@@ -1,5 +1,5 @@
-import  { body, CustomValidator } from 'express-validator';
-import  User from '../models/User';
+import { body, CustomValidator } from 'express-validator';
+import User from '../models/User';
 
 
 const noRepeatEmail: CustomValidator = (value) => {
@@ -10,7 +10,7 @@ const noRepeatEmail: CustomValidator = (value) => {
     })
 }
 
-const validator = [
+const newUserValidator = [
     body("name")
         .notEmpty()
         .withMessage("Field is Required !")
@@ -42,4 +42,4 @@ const validator = [
 ];
 
 
-export default validator;
+export default newUserValidator;
